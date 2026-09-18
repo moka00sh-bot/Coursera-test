@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body {
-    background-color: antiquewhite;
  background-color: antiquewhite;
  background-color: aliceblue;
  font-family: Arial, Helvetica, sans-serif;
@@ -12,9 +11,6 @@ body {
 
 .header {
     color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 24px;
     font-size: 70px;
     text-align: left;
     margin-top: 200px;
@@ -60,11 +56,8 @@ button {
     height: 65px;
     background-color: #1877f2;
     color: white;
-    border-radius: 7px;
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 50px;
-    margin-top: 50px;
     border-radius: 7px;
 }
 body > div {
@@ -103,11 +96,9 @@ nav a:link, a:visited {
     position: relative;
     bottom: 300px;
     border-radius: 7px;
+}
     
-
-} } 
 nav a:hover, a:active {
   background-color: green;
   color: gray;
 }
-
