@@ -1,34 +1,115 @@
 body {
     font-size: 16px;
-    color: #fff;
-    background-color: #d63384;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-#header-nav {
+.header{
     background-color: #fff;
     border-radius: 0;
-    border:10px solid pink ;
+    border:10px solid plum ;
 }
-.navbar-brand h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
-    font-size: 1.5em;
+.btn-group {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px; 
+}
+nav a:link, a:visited {
+    background-color: blueviolet;
+    color: white;
+}
+nav a:hover, a:active {
+  box-shadow: 2px 2px 2px 2px;
+  transform: scale(1.2);
+}
+img {
+    width: 600px;
+    height: 600px;
+    margin-right: 100px;
+}
+.line1 {
+    font-style: normal;
+    font-size: 100px;
+    color: #052370;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
+    margin-left: 100px;
+    margin-top: 50px;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
+.line2 {
+    font-size: 100px;
+    color: rgb(77, 77, 203);
+    margin-left: 100px;
 }
-.navbar-line {
-    color: #000;
-    text-transform: uppercase;
-    font-size: .7em;
-    margin-top: 15px;
+.descrption {
+    color: #052370;
+    font-size: 40px;
+    margin-left: 100px;
 }
-.navbar-line {
-    vertical-align: middle;
+.readme {
+    height: 50px;
+    width: 200px;
+    margin-left: 100px;
+}
+.header1 {
+    background-color: #fff;
+    border-radius: 0;
+    border:10px solid plum ;
+    margin-top: 200px;
+    height: 100px;
+}
+.button1 {
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.btn-light {
+    background-color: blueviolet;
+    color: white;
+}
+button:hover, button:active {
+  box-shadow: 2px 2px 2px 2px;
+  transform: scale(1.2);
+}
+.nav-pills {
+    margin-top: -30px;
+    margin-left: 100px;
+}
+.nav-item {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+}
+.nav-item a:link, a:visited {
+    background-color: blueviolet;
+    color: white;
+}
+.nav-item a:hover, a:active {
+  box-shadow: 2px 2px 2px 2px;
+  transform: scale(1.2);
+}
+.line3 {
+    font-style: normal;
+    font-size: 100px;
+    color: #052370;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+p > span {
+    margin-left: 100px;
+    font-size: 50px;
+    color: rgb(77, 77, 203);
+}
+.p1 {
+    margin-left: 100px;
+    font-size: 20px;
+    color: black;
+    margin-right: 700px;
+}
+.img2 {
+    width: 600px;
+    height: 600px;
+    margin-right: 100px;
+    margin-top: -700px;
 }
