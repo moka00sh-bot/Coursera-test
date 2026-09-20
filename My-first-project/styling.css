@@ -23,6 +23,35 @@ nav a:hover, a:active {
   box-shadow: 2px 2px 2px 2px;
   transform: scale(1.2);
 }
+.setting {
+    position: relative;
+    display: inline-block;
+}
+.settings-list {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    min-width: 150px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px;
+}
+.settings-list button {
+    display: block;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px;
+    
+}
+.settings-list button:hover, button:active {
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 2px 2px 2px 2px;
+  transform: scale(1.2);
+}
+.setting:hover .settings-list {
+    display: block;
+}
 img {
     width: 600px;
     height: 600px;
@@ -66,7 +95,15 @@ img {
     background-color: blueviolet;
     color: white;
 }
-button:hover, button:active {
+a:link, a:visited {
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: blueviolet;
+    color: white;
+}
+a:hover, a:active {
+  background-color: gray;
+  color: black;  
   box-shadow: 2px 2px 2px 2px;
   transform: scale(1.2);
 }
@@ -87,6 +124,34 @@ button:hover, button:active {
 .nav-item a:hover, a:active {
   box-shadow: 2px 2px 2px 2px;
   transform: scale(1.2);
+}
+.setting1 {
+    position: relative;
+    display: inline-block;
+    margin-left: 90%;
+    margin-top: 10px;
+}
+.settings-list a {
+    display: block;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px;
+    
+}
+.settings-list a:link, a:visited {
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.settings-list a:hover, a:active {
+  background-color: grey;
+  color: black;
+  box-shadow: 2px 2px 2px 2px;
+  transform: scale(1.2);
+}
+.setting1:hover .settings-list {
+    display: block;
 }
 .line3 {
     font-style: normal;
@@ -113,3 +178,100 @@ p > span {
     margin-right: 100px;
     margin-top: -700px;
 }
+.line4 {
+    font-style: normal;
+    text-align: center;
+    font-size: 100px;
+    color: #052370;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 2px 2px;
+}
+.form1 {
+    background-color: #fff;
+    border: 7px solid blueviolet;
+    border-radius: 7px;
+    box-shadow: 21px 21px 21px 21px;
+    height: 800px;
+    width: 700px;
+    margin-top: 80px;
+    margin-left: 400px;
+}
+input {
+    width: 75%;
+    height: 65px;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 7px; 
+    box-shadow: 2px 2px 2px 2px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+label {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #052370;
+    font-style: normal;
+  text-shadow: 2px 2px 2px 2px;
+}
+.button2 {
+    width: 50%;
+    height: 65px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-left: 200px;
+}
+.login-container {
+    position: relative;
+}
+
+.login-form {
+    display: none;
+    background-color: #fff;
+    border: 7px solid blueviolet;
+    border-radius: 7px;
+    box-shadow: 21px 21px 21px 21px;
+    height: 500px;
+    width: 700px;
+    margin-top: 170px;
+    margin-left: 400px;
+    position: absolute;
+    bottom: 100px;
+}
+.button3 {
+    width: 50%;
+    height: 65px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+#login-toggle {
+    display: none;
+}
+.loginbutton {
+    display: block;
+    height: 100px;
+    width: 700px;
+    background-color: blueviolet;
+    border-radius: 60% / 10%;
+    transition: all 0.8s ease;
+    transform: trranslateY(-180px);
+    margin-left: 400px;
+    margin-top: -80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+#login-toggle:checked + .loginbutton + .login-form {
+    display: block;
+}
+
