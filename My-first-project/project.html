@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer courses</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styling.css">
 </head>
 <body id="home">
@@ -17,6 +18,22 @@
         <a href="#contact" class="btn btn-light">CONTACT</a>
         <a href="#courses" class="btn btn-light">COURSES</a>
        </nav>
+      </div>
+     <div class="setting">
+      <button class="btn btn-light" type="button">
+        <i class="bi bi-gear-fill fs-2"></i>
+      </button>
+      <div class="settings-list">
+        <button type="button">Network & internet</button>
+        <button type="button">Connected devices</button>
+        <button type="button">Display</button>
+        <button type="button">Nottifications</button>
+        <button type="button">Battery</button>
+        <button type="button">Storage</button>
+        <button type="button">Location</button>
+        <button type="button">Accessibility</button>
+      </div>
+      </div>
      </div>
     </header>
     <div>
@@ -25,23 +42,30 @@
 <div>
     <h1 class="line1">ONLINE</h1>
     <h1 class="line2">COURSE</h1>
-    <p class="descrption">This App Proved Online Courses About Computer Science in All <span></span>Majors.</span></p>
+    <p class="descrption">This App Proved Online Courses About Computer Science in All<span>Majors.</span></p>
     <nav><a href="#readmore" class="btn btn-light readme" >READ MORE</a></nav>
 </div>
 <div>
     <section id="about us">
         <header class="header1">
-           <div class="d-grid gap-2 d-md-flex justify-content-md-end button1">
-              <button class="btn btn-light me-md-2" type="button">LOGIN</button>
-              <button class="btn btn-light" type="button">SIGNUP</button>
+         <div class="setting1">
+            <button class="btn btn-light" type="button">
+              <i class="bi bi-list"></i>
+            </button>
+            <div>
+              <div class="settings-list">
+                <a href="#login" class="btn btn-light me-md-2" >LOGIN</a>
+                <a href="#signup" class="btn btn-light" >SIGNUP</a>
+              </div>
             </div>
+          </div>
             <nav>
                <ul class="nav nav-pills">
                   <li class="nav-item">
                    <a class="nav-link active" aria-current="page" href="#home">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact us">CONTACT US</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#courses">COURSES</a>
@@ -50,11 +74,64 @@
             </nav>
         </header>
         <h1 class="line3">ABOUT US</h1>
-        <p class="p1"><span>Programming Courses</span><br>Learn programming languages such as C++, Java, and Python through simple lessons and practical exercises. Build your programming skills step by step and solve real coding problems</p>
-        <p class="p1"><span>Web Development</span><br>Learn how to create modern websites using HTML, CSS, JavaScript, and Bootstrap. Practice by building websites and interactive web pages while improving your frontend development skills.</p>
-        <p class="p1"><span>Cybersecurity</span> <br>Discover the basics of cybersecurity, networks, and system security. Learn how to protect systems, understand common security threats, and develop the skills needed for a career in cybersecurity</p>
+        <p class="p1"><i class="bi bi-caret-right"></i><span>Programming Courses</span><br>Learn programming languages such as C++, Java, and Python through simple lessons and practical exercises. Build your programming skills step by step and solve real coding problems</p>
+        <p class="p1"><i class="bi bi-caret-right"></i><span>Web Development</span><br>Learn how to create modern websites using HTML, CSS, JavaScript, and Bootstrap. Practice by building websites and interactive web pages while improving your frontend development skills.</p>
+        <p class="p1"><i class="bi bi-caret-right"></i><span>Cybersecurity</span> <br>Discover the basics of cybersecurity, networks, and system security. Learn how to protect systems, understand common security threats, and develop the skills needed for a career in cybersecurity</p>
         <img src="c:\Users\lenovo\OneDrive\Pictures\Saved Pictures\about us1.jpg" class="rounded float-end img2" alt="description">
     </section>
-</div>
-</body>
+  </div>
+    <section id="signup">
+      <header class="header">
+       <div class="btn-group">
+         <nav>
+           <a href="#home" class="btn btn-light">HOME</a>
+           <a href="#about us" class="btn btn-light">ABOUT US</a>
+           <a href="#contact" class="btn btn-light">CONTACT</a>
+           <a href="#courses" class="btn btn-light">COURSES</a>
+          </nav>
+        </div>
+     </header>
+      <form class="form1">
+        <h1 class="line4">SIGN UP</h1>
+        <div>
+         <label for="name">UserName:</label>
+         <input type="text" id="name" name=""name placeholder="UserName">
+        </div>
+        <br>
+        <div>
+         <label for="email">Email:</label>
+         <input type="email" id=""email name=""email placeholder="Email">
+        </div>
+        <br>
+        <div>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" placeholder="Password">
+         <br>
+        </div>
+        <br>
+        <button class="btn btn-light button2" type="button">Sign up</button><br>
+      </form>
+      <section id="login">
+         <div class="login-container">
+          <input type="checkbox" id="login-toggle">
+         <label for="login-toggle" class="loginbutton">
+           LOGIN
+         </label>
+         <form class="login-form">
+          <div>
+            <label for="email">Email:</label>
+              <input type="email" id=""email name=""email placeholder="Email">
+              <br>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Password">
+              <br>
+          </div>
+            <button class="btn btn-light button3" type="button">Login</button>
+          </form>
+        </div>  
+      </section>
+    </section>   
+  </body>
 </html>
