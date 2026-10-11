@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --brand: #059669;
+  --brand-dark: #047857;
+  --brand-light: #ecfdf5;
+  --ink: #17231f;
+  --muted: #718078;
+  --line: #e4ebe7;
+}
+body {
+  background: #f7faf8;
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+}
+.site-header {
+  background: rgba(255, 255, 255, .94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px); /*blur the background behind the header*/
+}
+.brand {
+  color: #087b5b;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: -.04em;/*negative letter spacing to make the letters closer together*/
+}
+.brand:hover {
+  color: var(--brand-dark);
+}
+.brand-icon {
+  display: inline-flex;/*use flexbox to center the icon*/
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;/*center the icon vertically and horizontally*/
+  border-radius: 13px;
+  color: #fff;
+  background: var(--brand);
+  box-shadow: 0 7px 18px rgba(5, 150, 105, .2);
+  font-size: 1.25rem;
+}
+.nav-pills { /*for the navigation pills in the header*/
+  display: flex;
+  padding: 4px;
+  background: #f1f5f3;
+  border: 1px solid #e8eeea;
+  border-radius: 50rem;
+  gap: 3px;
+}
+.nav-pills .nav-link {
+  color: #5d6a63;
+  border-radius: 50rem;
+  padding: .6rem 1.1rem;
+  font-size: .85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.nav-pills .nav-link:hover {
+  color: var(--brand-dark);
+}
+
+.nav-pills .nav-link.active {
+  background: #fff;
+  color: var(--brand-dark);
+  box-shadow: 0 2px 8px rgba(20, 50, 35, .08);
+}
+.credit-pill {
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #bcebd6;
+  background: var(--brand-light);
+  color: var(--brand-dark);
+  padding: 8px 12px;
+  border-radius: 50rem;
+  font-size: .75rem;
+  font-weight: 700;
+}
+.avatar-img {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  object-fit: cover;/*make sure the image covers the entire area without stretching*/
+  border: 2px solid #a7e8cb;
+}
