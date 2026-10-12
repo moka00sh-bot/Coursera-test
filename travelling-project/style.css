@@ -83,3 +83,108 @@ body {
   object-fit: cover;/*make sure the image covers the entire area without stretching*/
   border: 2px solid #a7e8cb;
 }
+.hero-banner {
+  position: relative;
+  overflow: hidden;/*hide any overflowing content*/
+  border-radius: 28px;
+  min-height: 380px;/*set a minimum height for the hero banner*/
+  display: flex;/*use flexbox to center the content*/
+  align-items: center;
+  padding: clamp(1.5rem, 5vw, 3.5rem);/*use clamp to make the padding responsive based on viewport width*/
+  color:white;
+  background: #102e27 url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;/*set a background image with cover and center alignment*/
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient( /*create a gradient overlay on the hero banner*/
+    90deg,
+    rgba(7, 28, 25, 0.92),
+    rgba(8, 38, 30, 0.65),
+    rgba(8, 30, 27, 0.2)
+  );
+}
+.hero-content {
+  position: relative;
+  width: min(100%, 720px);/*set a maximum width for the hero content*/
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 7px 12px;
+  color: #b7f7d7;
+  border: 1px solid #6ee7b752;
+  border-radius: 50rem;
+  background: #10b98129;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.search-panel {
+  padding: 8px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 12px 28px #00000026;
+}
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 12px;
+  border: 1px solid #e7ece9;
+  border-radius: 12px;
+  background: #f8faf9;
+  color: #839089;
+}
+.search-input-wrap .form-control {
+  min-height: 46px;
+  padding-left: 10px;
+  border: 0;
+  background: transparent;
+}
+.form-select {
+  min-height: 48px;
+  border-color: #e7ece9;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #839089;
+}
+.category-chip {
+  flex-shrink: 0; /*make it more flex to move right and left*/
+  padding: 10px 15px;
+  border: 1px solid #e1e9e4;
+  border-radius: 12px;
+  background: white;
+  color: #5d6a63;
+  font-size: 0.84rem;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+.category-chip:hover {
+  color: var(--brand-dark);
+  border-color: var(--brand);
+  background: var(--brand);
+  color: white;
+}
+.section-title {
+  color: #17231f;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+.count-label {
+  min-width: 26px;
+  height: 25px;
+  padding: 0 7px;
+  border-radius: 8px;
+  background: #e3f8ee;
+  color: var(--brand-dark);
+  font-size: 1.45rem;
+}
+.section-subtitle {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+
+
