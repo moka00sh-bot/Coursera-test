@@ -186,5 +186,33 @@ body {
   font-size: 0.88rem;
 }
 
+.site-footer {
+  margin-top: 45px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  color: #849188;
+  font-size: 0.75rem;
+}
+.destination-card {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 4px 15px #16312409;
+  transition: 0.25s ease;
+}
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 34px #1631241c;
+}
+.destination-image-wrap {
+  position: relative;
+  height: 225px;
+  overflow: hidden;
+  background: #e7eeea;
+}
+
+
 
 
