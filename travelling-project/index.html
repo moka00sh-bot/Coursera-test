@@ -22,7 +22,7 @@
               <span class="navbar-toggler-icon"></span>
             </button><!--for mobile-->  
             <div class="collapse navbar-collapse">
-               <div class="nav nav-pills mx-lg-auto my-3 my-lg-0" role="tablist" aria-label="Main navigation" id="mainnav">
+               <div class="nav nav-pills mx-lg-auto my-3 my-lg-0" role="tablist" aria-label="Main navigation" id="mainNav">
                   <button class="nav-link active" data-view="explore" type="button">Explore</button>
                   <button class="nav-link" data-view="bookmarks" type="button">Saved (<span id="bookmark-count">0</span>)</button>
                   <button class="nav-link" data-view="itinerary" type="button">My Itinerary</button>
@@ -52,7 +52,7 @@
                   </div>
                </div>
                <div class="col-12 col-md-4">
-                  <select class="form-select" aria-label="Filter by category">
+                  <select id="category-filter" class="form-select" aria-label="Filter by category">
                      <option value="all">All Categories</option>
                      <option value="Beach">Beaches & Island</option>
                      <option value="Mountain">Mountain & Nature</option>
@@ -99,23 +99,28 @@
          </div>
          <button class="btn btn-brand" id="custom-trip-btn"><i class="bi bi-plus-lg me-2"></i>Plan a new trip</button>
       </div>
-      <div class="col-lg-4">
-         <aside class="summary-card">
-            <h3><i class="bi bi-pie-chart-fill me-2"></i>Trip summary</h3>
-            <div class="summary-row">
-               <span> Planned trips</span>
-               <strong id="itinerary-count">0</strong>
-            </div>
-            <div  class="summary-row">
-               <span>Estimated cost</span>
-               <strong class="text-brand" id="itinerary-total">$0</strong>
-            </div>
-            <div class="insurance-note">
-               <strong><i class="bi bi-shield-check me-2"></i>Travel smart</strong>
-               <p class="mb-0 mt-2">  Review your travel dates and budget before confirming your plans.</p>
-            </div>
-         </aside>
-      </div>
+      <div class="row g-4">
+         <div class="col-lg-8">
+            <div id="itinerary-list" class="d-grid gap-3"></div>
+         </div>
+         <div class="col-lg-4">
+           <aside class="summary-card">
+             <h3><i class="bi bi-pie-chart-fill me-2"></i>Trip summary</h3>
+             <div class="summary-row">
+                <span> Planned trips</span>
+                <strong id="itinerary-count">0</strong>
+              </div>
+              <div  class="summary-row">
+                <span>Estimated cost</span>
+                <strong class="text-brand" id="itinerary-total">$0</strong>
+             </div>
+             <div class="insurance-note">
+                <strong><i class="bi bi-shield-check me-2"></i>Travel smart</strong>
+                <p class="mb-0 mt-2">  Review your travel dates and budget before confirming your plans.</p>
+             </div>
+          </aside>
+       </div>
+     </div>
    </section>
  </main>
  <footer class="site-footer">
