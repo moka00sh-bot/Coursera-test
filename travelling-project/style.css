@@ -220,7 +220,6 @@ body {
     background: linear-gradient(transparent, #0a1b2194);
     pointer-events: none;
 }
-
 .destination-badge {
     display: inline-flex;
     align-items: center;
@@ -234,7 +233,6 @@ body {
     font-size: 0.7rem;
     font-weight: 700;
 }
-
 .heart-button {
     position: absolute;
     top: 12px;
@@ -250,53 +248,12 @@ body {
     font-size: 1.05rem;
     cursor: pointer;
 }
-
-.heart-button:hover,
-.heart-button.saved {
-    color: #e11d48;
+.heart-button:hover,.heart-button.saved {
+  color: #e11d48;
 }
-
-.destination-meta {
-    position: absolute;
-    bottom: 13px;
-    left: 14px;
-    right: 14px;
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    color: white;
-    font-size: 0.72rem;
-    font-weight: 600;
-}
-
-.location-label,
-.rating-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 9px;
-    border-radius: 8px;
-    background: #141e1980;
-}
-
-.location-label span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.rating-label {
-    flex-shrink: 0;
-    background: #f59e0bf0;
-}
-
 .destination-body {
-    display: flex;
-    flex-direction: column;
-    padding: 19px;
-    min-height: 205px;
+  padding: 20px;
 }
-
 .destination-title {
     margin: 0 0 7px;
     color: #1c2b23;
@@ -304,18 +261,13 @@ body {
     font-weight: 800;
     line-height: 1.4;
 }
-
 .destination-description {
-    display: -webkit-box;
-    overflow: hidden;
-    margin: 0;
-    color: #78857d;
-    font-size: 0.78rem;
-    line-height: 1.6;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+  min-height: 42px;
+  margin-bottom: 17px;
+  color: var(--text-gray);
+  font-size: 13px;
+  line-height: 1.7;
 }
-
 .destination-footer {
     display: flex;
     justify-content: space-between;
@@ -325,29 +277,16 @@ body {
     padding-top: 16px;
     border-top: 1px solid #edf1ee;
 }
-
-.price-caption {
-    display: block;
-    margin-bottom: 3px;
-    color: #98a39d;
-    font-size: 0.64rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 .destination-price {
     color: #1b2c23;
     font-size: 1.1rem;
     font-weight: 800;
 }
-
 .destination-price small {
     color: #89958e;
     font-size: 0.7rem;
     font-weight: 400;
 }
-
-/* BUTTONS */
 .btn-brand {
     border: 1px solid var(--brand);
     background: var(--brand);
@@ -357,13 +296,11 @@ body {
     font-size: 0.8rem;
     font-weight: 700;
 }
-
 .btn-brand:hover {
     border-color: var(--brand-dark);
     background: var(--brand-dark);
     color: white;
 }
-
 .btn-book {
     border: 1px solid #d1f1e1;
     border-radius: 10px;
@@ -374,13 +311,11 @@ body {
     font-weight: 800;
     white-space: nowrap;
 }
-
 .btn-book:hover {
     border-color: var(--brand);
     background: var(--brand);
     color: white;
 }
-
 /* EMPTY STATES */
 .empty-state {
     padding: 65px 20px;
@@ -389,7 +324,6 @@ body {
     background: white;
     text-align: center;
 }
-
 .empty-icon {
     display: grid;
     place-items: center;
@@ -401,17 +335,14 @@ body {
     color: var(--brand);
     font-size: 1.6rem;
 }
-
 .empty-state h3 {
     font-size: 1.1rem;
     font-weight: 800;
 }
-
 .empty-state p {
     color: var(--muted);
     font-size: 0.85rem;
 }
-
 /* TRIP SUMMARY */
 .summary-card {
     padding: 24px;
@@ -419,18 +350,15 @@ body {
     border-radius: 22px;
     background: white;
 }
-
 .summary-card h3 {
     margin-bottom: 20px;
     font-size: 1.05rem;
     font-weight: 800;
 }
-
 .summary-card h3 i,
 .text-brand {
     color: var(--brand);
 }
-
 .summary-row {
     display: flex;
     justify-content: space-between;
@@ -439,11 +367,9 @@ body {
     border-bottom: 1px solid #edf1ee;
     font-size: 0.85rem;
 }
-
 .summary-row span {
     color: var(--muted);
 }
-
 .insurance-note {
     margin-top: 22px;
     padding: 16px;
@@ -453,13 +379,11 @@ body {
     color: #176747;
     font-size: 0.8rem;
 }
-
 .insurance-note p {
     color: #498367;
     font-size: 0.75rem;
     line-height: 1.6;
 }
-
 /* ITINERARY */
 .itinerary-card {
     display: flex;
@@ -470,7 +394,6 @@ body {
     border-radius: 20px;
     background: white;
 }
-
 .itinerary-image {
     width: 125px;
     height: 125px;
@@ -478,12 +401,10 @@ body {
     border-radius: 15px;
     object-fit: cover;
 }
-
 .itinerary-title {
     font-size: 1rem;
     font-weight: 800;
 }
-
 .trip-status {
     display: inline-block;
     margin-bottom: 7px;
@@ -495,7 +416,6 @@ body {
     font-weight: 800;
     text-transform: uppercase;
 }
-
 .trip-details {
     display: flex;
     flex-wrap: wrap;
@@ -504,7 +424,6 @@ body {
     color: #6f7d75;
     font-size: 0.75rem;
 }
-
 .cancel-trip {
     margin-top: 7px;
     padding: 0;
@@ -514,7 +433,6 @@ body {
     font-size: 0.75rem;
     font-weight: 700;
 }
-
 /* FOOTER */
 .site-footer {
     margin-top: 45px;
@@ -523,33 +441,28 @@ body {
     color: #849188;
     font-size: 0.75rem;
 }
-
 /* BOOKING MODAL */
 .booking-modal {
     overflow: hidden;
     border: 0;
     border-radius: 22px;
 }
-
 .modal-image-wrap {
     position: relative;
     height: 235px;
     background: #183b30;
 }
-
 .modal-image-wrap::after {
     position: absolute;
     inset: 35% 0 0;
     content: "";
     background: linear-gradient(transparent, #051610c7);
 }
-
 .modal-image-wrap > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .modal-close {
     position: absolute;
     top: 15px;
@@ -559,7 +472,6 @@ body {
     border-radius: 50%;
     background-color: #ffffffe8;
 }
-
 .modal-image-title {
     position: absolute;
     z-index: 1;
@@ -568,29 +480,24 @@ body {
     right: 22px;
     color: white;
 }
-
 .modal-image-title .destination-badge {
     position: static;
     margin-bottom: 7px;
 }
-
 .modal-image-title h2 {
     margin-bottom: 4px;
     font-size: 1.55rem;
     font-weight: 800;
 }
-
 .modal-image-title p {
     color: #e4eee8;
     font-size: 0.8rem;
 }
-
 .price-large {
     color: #1b2c23;
     font-size: 1.9rem;
     font-weight: 800;
 }
-
 .rating-pill {
     padding: 8px 11px;
     border: 1px solid #f8df9b;
@@ -600,27 +507,21 @@ body {
     font-size: 0.85rem;
     font-weight: 800;
 }
-
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 575.98px) {
     .hero-banner {
         min-height: 420px;
         border-radius: 22px;
     }
-
     .hero-content h1 {
         font-size: 2.3rem;
     }
-
     .itinerary-card {
         align-items: flex-start;
         flex-wrap: wrap;
     }
-
     .itinerary-image {
         width: 100%;
         height: 170px;
     }
 }
-
-
